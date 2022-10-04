@@ -3,4 +3,5 @@ dependencies {
     implementation 'com.alibaba:druid-spring-boot-starter'
     implementation 'com.baomidou:mybatis-plus-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-seata'
 }

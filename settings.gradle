@@ -1,2 +1,4 @@
 rootProject.name = 'demo-seata'
+include 'product'
+include 'order'
 

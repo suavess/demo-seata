@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * @author shunxin.jin
  * @date 2022/10/3 22:11
@@ -18,11 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/product")
 public class ProductController {
-    @Autowired
+    @Resource
     private ProductService productService;
 
     @GetMapping("/getById")
-    public ProductEntity getById(Integer id) {
+    public ProductEntity getById(@RequestParam("id") Integer id) {
         return productService.getById(id);
     }
 
